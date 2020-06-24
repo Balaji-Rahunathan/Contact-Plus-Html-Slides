@@ -327,29 +327,27 @@ function touchHandler(event) {
   event.preventDefault();
 }
 
-$(function () {
-  $(document).keydown(function (e) {
-    return (e.which || e.keyCode) != 116;
-  });
+var lastTouchY = 0;
+var preventPullToRefresh = false;
+
+$("body").on("touchstart", function (e) {
+  if (e.originalEvent.touches.length != 1) {
+    return;
+  }
+  lastTouchY = e.originalEvent.touches[0].clientY;
+  preventPullToRefresh = window.pageYOffset == 0;
 });
 
-$("html").click(function () {
-  // Hide the menus if visible.
-});
-
-$("#menucontainer").click(function (event) {
-  event.stopPropagation();
-});
-
-event.preventDefault();
-event.stopPropagation();
-$(document).bind("pagebeforechange", function (event, ui) {
-  event.preventDefault();
-});
-
-$.mobile.changePage(url, {
-  allowSamePageTransition: true,
-  transition: "none",
-  showLoadMsg: true,
-  reloadPage: false,
+$("body").on("touchmove", function (e) {
+  var touchY = e.originalEvent.touches[0].clientY;
+  var touchYDelta = touchY - lastTouchY;
+  lastTouchY = touchY;
+  if (preventPullToRefresh) {
+    // To suppress pull-to-refresh it is sufficient to preventDefault the first overscrolling touchmove.
+    preventPullToRefresh = false;
+    if (touchYDelta > 0) {
+      e.preventDefault();
+      return;
+    }
+  }
 });
