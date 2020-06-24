@@ -158,6 +158,10 @@ var dropped1 = false;
 $("#drag_1").draggable({
   helper: "original",
   revert: "invalid",
+  transition: "none",
+  allowSamePageTransition: true,
+
+  reloadPage: true,
   drag: function (event, ui) {
     var target = document.getElementById("drag_1");
     target.style.width = "25%";
@@ -169,6 +173,7 @@ $("#drag_1").draggable({
 
     document.addEventListener("touchstart", touchHandler, true);
     document.addEventListener("touchmove", touchHandler, true);
+
     $("#drag_img_1").attr(
       "src",
       "assets/img/ContactPlus/Balaji%20Precautions-14.svg"
