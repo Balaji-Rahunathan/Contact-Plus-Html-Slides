@@ -109,6 +109,9 @@ $("#drag").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
+    document.addEventListener("touchstart", touchHandler, true);
+    document.addEventListener("touchmove", touchHandler, true);
+
     $("#drag_img").attr(
       "src",
       "assets/img/ContactPlus/Balaji%20Precautions-13.svg"
@@ -163,6 +166,9 @@ $("#drag_1").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
+
+    document.addEventListener("touchmove", touchHandler, true);
+
     $("#drag_img_1").attr(
       "src",
       "assets/img/ContactPlus/Balaji%20Precautions-14.svg"
@@ -182,7 +188,9 @@ $("#drag_1").draggable({
 });
 $("#drag_1").draggable({
   cursor: "move",
+
   cursorAt: { width: "50%", height: "50%" },
+
   helper: function (event) {
     return $("#drag_1").attr("src", "assets/img/Assets/Gown.svg");
   },
@@ -284,4 +292,41 @@ if ($(window).width() > 600) {
   $(".rwl_1").addClass("rwl");
 } else {
   $(".rwl_1").removeClass("rwl");
+}
+
+function touchHandler(event) {
+  var touch = event.changedTouches[0];
+
+  var simulatedEvent = document.createEvent("MouseEvent");
+  simulatedEvent.initMouseEvent(
+    {
+      touchstart: "mousedown",
+      touchmove: "mousemove",
+      touchend: "mouseup",
+    }[event.type],
+    true,
+    true,
+    window,
+    1,
+    touch.screenX,
+    touch.screenY,
+    touch.clientX,
+    touch.clientY,
+    false,
+    false,
+    false,
+    false,
+    0,
+    null
+  );
+
+  touch.target.dispatchEvent(simulatedEvent);
+  event.preventDefault();
+}
+
+function init() {
+  document.addEventListener("touchstart", touchHandler, true);
+  document.addEventListener("touchmove", touchHandler, true);
+  document.addEventListener("touchend", touchHandler, true);
+  document.addEventListener("touchcancel", touchHandler, true);
 }
