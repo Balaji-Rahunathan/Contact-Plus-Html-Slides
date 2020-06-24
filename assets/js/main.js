@@ -101,6 +101,7 @@ var dropped = false;
 $("#drag").draggable({
   helper: "original",
   revert: "invalid",
+
   drag: function (event, ui) {
     var target = document.getElementById("drag");
     target.style.width = "35%";
@@ -170,9 +171,6 @@ $("#drag_1").draggable({
     target.style.right = 0;
     target.style.bottom = 0;
     target.style.opacity = 1;
-
-    document.addEventListener("touchstart", touchHandler, true);
-    document.addEventListener("touchmove", touchHandler, true);
 
     $("#drag_img_1").attr(
       "src",
@@ -329,9 +327,29 @@ function touchHandler(event) {
   event.preventDefault();
 }
 
-function init() {
-  document.addEventListener("touchstart", touchHandler, true);
-  document.addEventListener("touchmove", touchHandler, true);
-  document.addEventListener("touchend", touchHandler, true);
-  document.addEventListener("touchcancel", touchHandler, true);
-}
+$(function () {
+  $(document).keydown(function (e) {
+    return (e.which || e.keyCode) != 116;
+  });
+});
+
+$("html").click(function () {
+  // Hide the menus if visible.
+});
+
+$("#menucontainer").click(function (event) {
+  event.stopPropagation();
+});
+
+event.preventDefault();
+event.stopPropagation();
+$(document).bind("pagebeforechange", function (event, ui) {
+  event.preventDefault();
+});
+
+$.mobile.changePage(url, {
+  allowSamePageTransition: true,
+  transition: "none",
+  showLoadMsg: true,
+  reloadPage: false,
+});
