@@ -167,8 +167,8 @@ $("#drag_1").draggable({
     target.style.bottom = 0;
     target.style.opacity = 1;
 
+    document.addEventListener("touchstart", touchHandler, true);
     document.addEventListener("touchmove", touchHandler, true);
-
     $("#drag_img_1").attr(
       "src",
       "assets/img/ContactPlus/Balaji%20Precautions-14.svg"
