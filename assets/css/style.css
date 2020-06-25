@@ -616,7 +616,7 @@ h6 {
     width: 100%;
     height: 80px !important;
     max-width: 80px !important ;
-    border: 2px dashed #2ea74f !important;
+    border: 2px dashed #f28c00 !important;
     border-radius: 10px !important;
     display: flex;
     justify-content: center;
@@ -725,12 +725,18 @@ h6 {
   .box2,
   .box3,
   .block1 h3 {
-    color: #187dd7;
+    color: #f28c00;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 10px !important;
+  }
+
+  .block1 h3 {
+    color: #fff;
+    padding: 1%;
+    background-color: #f28c00;
   }
 
   .block1b-image-container {
@@ -1135,13 +1141,15 @@ h6 {
     max-height: 125px;
   }
   .block1 h3 {
-    color: #187dd7;
+    color: #fff;
     text-align: center;
+    padding: 1.5%;
+    background-color: #f28c00;
     font-size: 32px;
     font-weight: 600;
   }
   .P_text_aling_1 {
-    font-size: 18px !important;
+    font-size: 24px !important;
     margin-bottom: 25px !important;
     margin-top: 10px;
     font-weight: 600 !important;
@@ -1243,7 +1251,7 @@ h6 {
     width: 100%;
     height: 200px !important;
     max-width: 200px !important;
-    border: 2px dashed #2ea74f !important;
+    border: 2px dashed #f28c00 !important;
     border-radius: 15px !important;
     display: flex;
     justify-content: center;
@@ -1508,14 +1516,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_1:before {
-  border-color: #30a851 !important;
+  border-color: #f28c00 !important;
   content: "\f00c";
   color: #fff;
-  background-color: #30a851;
+  background-color: #f28c00;
   font-family: FontAwesome;
 }
 .progressbar li.active_1 + li:after {
-  background-color: #30a851;
+  background-color: #f28c00;
 }
 .progressbar li.active_2 {
   color: #4197e5;
@@ -1530,14 +1538,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_3:before {
-  border-color: #30a851 !important;
+  border-color: #f28c00 !important;
   content: "\f00c";
   color: #fff;
-  background-color: #30a851;
+  background-color: #f28c00;
   font-family: FontAwesome;
 }
 .progressbar li.active_3 + li:after {
-  background-color: #30a851;
+  background-color: #f28c00;
 }
 
 .white_box_bg {
