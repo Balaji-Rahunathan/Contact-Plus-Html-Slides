@@ -101,7 +101,7 @@ var dropped = false;
 $("#drag").draggable({
   helper: "original",
   revert: "invalid",
-
+  scroll: false,
   drag: function (event, ui) {
     var target = document.getElementById("drag");
     target.style.width = "35%";
