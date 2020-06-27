@@ -618,7 +618,7 @@ h6 {
     width: 100%;
     height: 80px !important;
     max-width: 80px !important ;
-    border: 2px dashed #8036ff !important;
+    border: 2px dashed #fd50fa !important;
     border-radius: 10px !important;
     display: flex;
     justify-content: center;
@@ -727,7 +727,7 @@ h6 {
   .box2,
   .box3,
   .block1 h3 {
-    color: #8036ff;
+    color: #fd50fa;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -738,7 +738,7 @@ h6 {
   .block1 h3 {
     color: #fff;
     padding: 1%;
-    background-color: #8036ff;
+    background-color: #fd50fa;
   }
 
   .block1b-image-container {
@@ -1146,7 +1146,7 @@ h6 {
     color: #fff;
     text-align: center;
     padding: 1.5%;
-    background-color: #8036ff;
+    background-color: #fd50fa;
     font-size: 32px;
     font-weight: 600;
   }
@@ -1253,7 +1253,7 @@ h6 {
     width: 100%;
     height: 200px !important;
     max-width: 200px !important;
-    border: 2px dashed #8036ff !important;
+    border: 2px dashed #fd50fa !important;
     border-radius: 15px !important;
     display: flex;
     justify-content: center;
@@ -1518,14 +1518,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_1:before {
-  border-color: #8036ff !important;
+  border-color: #fd50fa !important;
   content: "\f00c";
   color: #fff;
-  background-color: #8036ff;
+  background-color: #fd50fa;
   font-family: FontAwesome;
 }
 .progressbar li.active_1 + li:after {
-  background-color: #8036ff;
+  background-color: #fd50fa;
 }
 .progressbar li.active_2 {
   color: #4197e5;
@@ -1540,14 +1540,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_3:before {
-  border-color: #8036ff !important;
+  border-color: #fd50fa !important;
   content: "\f00c";
   color: #fff;
-  background-color: #8036ff;
+  background-color: #fd50fa;
   font-family: FontAwesome;
 }
 .progressbar li.active_3 + li:after {
-  background-color: #8036ff;
+  background-color: #fd50fa;
 }
 
 .white_box_bg {
@@ -1591,9 +1591,9 @@ h6 {
   color: #fff;
   line-height: 1.3 !important;
   font-size: 16px;
-  border: 0px solid #8036ff;
+  border: 0px solid #fd50fa;
   border-radius: 0px 50px 0px 0px;
-  background-color: #8036ff;
+  background-color: #fd50fa;
 }
 .blue_box_mar {
   font-weight: 600;
