@@ -618,7 +618,7 @@ h6 {
     width: 100%;
     height: 80px !important;
     max-width: 80px !important ;
-    border: 2px dashed #fd50fa !important;
+    border: 2px dashed #f646ff !important;
     border-radius: 10px !important;
     display: flex;
     justify-content: center;
@@ -727,7 +727,7 @@ h6 {
   .box2,
   .box3,
   .block1 h3 {
-    color: #fd50fa;
+    color: #f646ff;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -738,7 +738,7 @@ h6 {
   .block1 h3 {
     color: #fff;
     padding: 1%;
-    background-color: #fd50fa;
+    background-color: #f646ff;
   }
 
   .block1b-image-container {
@@ -1146,7 +1146,7 @@ h6 {
     color: #fff;
     text-align: center;
     padding: 1.5%;
-    background-color: #fd50fa;
+    background-color: #f646ff;
     font-size: 32px;
     font-weight: 600;
   }
@@ -1253,7 +1253,7 @@ h6 {
     width: 100%;
     height: 200px !important;
     max-width: 200px !important;
-    border: 2px dashed #fd50fa !important;
+    border: 2px dashed #f646ff !important;
     border-radius: 15px !important;
     display: flex;
     justify-content: center;
@@ -1454,6 +1454,11 @@ h6 {
     margin-left: auto;
     margin-bottom: auto !important;
   }
+  .P_text_aling_21 {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+    font-weight: 600 !important;
+  }
 }
 .s_pro {
   display: block;
@@ -1518,14 +1523,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_1:before {
-  border-color: #fd50fa !important;
+  border-color: #f646ff !important;
   content: "\f00c";
   color: #fff;
-  background-color: #fd50fa;
+  background-color: #f646ff;
   font-family: FontAwesome;
 }
 .progressbar li.active_1 + li:after {
-  background-color: #fd50fa;
+  background-color: #f646ff;
 }
 .progressbar li.active_2 {
   color: #4197e5;
@@ -1540,14 +1545,14 @@ h6 {
   color: #212529;
 }
 .progressbar li.active_3:before {
-  border-color: #fd50fa !important;
+  border-color: #f646ff !important;
   content: "\f00c";
   color: #fff;
-  background-color: #fd50fa;
+  background-color: #f646ff;
   font-family: FontAwesome;
 }
 .progressbar li.active_3 + li:after {
-  background-color: #fd50fa;
+  background-color: #f646ff;
 }
 
 .white_box_bg {
@@ -1591,9 +1596,9 @@ h6 {
   color: #fff;
   line-height: 1.3 !important;
   font-size: 16px;
-  border: 0px solid #fd50fa;
+  border: 0px solid #f646ff;
   border-radius: 0px 50px 0px 0px;
-  background-color: #fd50fa;
+  background-color: #f646ff;
 }
 .blue_box_mar {
   font-weight: 600;
@@ -1623,5 +1628,20 @@ h6 {
 }
 
 .red_co {
-  color: #ff0000;
+  color: #ff0000 !important;
+}
+.P_text_aling_21 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: 600;
+
+  color: #212529;
+}
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
