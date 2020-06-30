@@ -131,8 +131,17 @@ $("#drag").draggable({
   },
 });
 $("#drag").draggable({
+  appendTo: "body",
+
+  helper: "clone",
   cursor: "move",
-  cursorAt: { width: "50%", height: "50%" },
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
   },
@@ -190,10 +199,17 @@ $("#drag_1").draggable({
   },
 });
 $("#drag_1").draggable({
+  appendTo: "body",
+
+  helper: "clone",
   cursor: "move",
-
-  cursorAt: { width: "50%", height: "50%" },
-
+  tolerance: "fit",
+  start: function (event, ui) {
+    $("#drag").draggable("instance").offset.click = {
+      left: Math.floor(ui.helper.width() / 2),
+      top: Math.floor(ui.helper.height() / 2),
+    };
+  },
   helper: function (event) {
     return $("#drag_1").attr("src", "assets/img/Assets/Gown.svg");
   },
