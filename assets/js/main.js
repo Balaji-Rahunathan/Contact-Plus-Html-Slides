@@ -132,7 +132,6 @@ $("#drag").draggable({
 });
 $("#drag").draggable({
   appendTo: "body",
-
   helper: "clone",
   cursor: "move",
   tolerance: "fit",
@@ -168,10 +167,7 @@ var dropped1 = false;
 $("#drag_1").draggable({
   helper: "original",
   revert: "invalid",
-  transition: "none",
-  allowSamePageTransition: true,
 
-  reloadPage: true,
   drag: function (event, ui) {
     var target = document.getElementById("drag_1");
     target.style.width = "25%";
@@ -200,12 +196,11 @@ $("#drag_1").draggable({
 });
 $("#drag_1").draggable({
   appendTo: "body",
-
   helper: "clone",
   cursor: "move",
   tolerance: "fit",
   start: function (event, ui) {
-    $("#drag").draggable("instance").offset.click = {
+    $("#drag_1").draggable("instance").offset.click = {
       left: Math.floor(ui.helper.width() / 2),
       top: Math.floor(ui.helper.height() / 2),
     };
