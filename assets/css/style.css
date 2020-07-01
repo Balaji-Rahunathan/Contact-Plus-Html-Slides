@@ -1639,3 +1639,32 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+.suc_bg {
+  margin: auto;
+}
+
+.suc_head {
+  color: #3d94cf;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+.suc_btn {
+  border-radius: 5px;
+
+  background-color: #187dd7;
+  color: #fff;
+
+  font-size: 16px;
+  border: 1px solid #187dd7;
+}
+.suc_btn:hover {
+  color: #fff;
+}
+.suc_color {
+  color: #22aa66;
+}
+.suc_img {
+  width: 500px;
+}

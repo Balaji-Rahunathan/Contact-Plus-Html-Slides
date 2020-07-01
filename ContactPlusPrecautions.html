@@ -19,10 +19,19 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <style></style>
+    <style>
+      canvas {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -100;
+      }
+    </style>
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body class="">
+    <canvas id="canvas"></canvas>
     <div class="">
       <section class="container-block1">
         <div class="container">
@@ -601,19 +610,19 @@
                           </div>
                         </div>
                         <div class="button-container">
-                          <a
-                            href="index.html"
+                          <button
                             name="next"
+                            onclick="loop()"
                             id="drop_drag_next_nex_d_2"
                             class="block1b-button mx-1"
                             style="display: none;"
                           >
-                            Home
+                            Continue
                             <i
                               class="fa fa-angle-double-right"
                               aria-hidden="true"
                             ></i>
-                          </a>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -628,6 +637,30 @@
 
                     <li class="active_2" id="active_r_4">Sanitizer</li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d_d_div">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 block1">
+                  <img class="drop-img" src="assets/img/Contact Plus.svg" />
+                  <h3 class="my-3">Contact Plus Precautions</h3>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <img class="suc_img" src="assets/img/Assets/done.svg" />
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <h1 class="suc_head">
+                    Well done!!! Training Completed<span class="suc_color">
+                      Successfully</span
+                    >
+                  </h1>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-3">
+                  <a href="index.html" class="suc_btn btn btn-lg">Home </a>
                 </div>
               </div>
             </div>
