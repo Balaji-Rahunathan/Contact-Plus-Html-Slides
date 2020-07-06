@@ -103,7 +103,7 @@ $("#drag").draggable({
   revert: "invalid",
 
   drag: function (event, ui) {
-    if ($(window).width() < 600) {
+    if ($(window).width() < 900) {
       $("#drag").css("width", "30%");
     } else {
       $("#drag").css("width", "50%");
