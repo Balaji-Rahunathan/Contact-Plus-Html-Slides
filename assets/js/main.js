@@ -103,8 +103,13 @@ $("#drag").draggable({
   revert: "invalid",
 
   drag: function (event, ui) {
+    if ($(window).width() < 600) {
+      $("#drag").css("width", "30%");
+    } else {
+      $("#drag").css("width", "50%");
+    }
     var target = document.getElementById("drag");
-    target.style.width = "50%";
+
     target.style.top = 0;
     target.style.left = 0;
     target.style.right = 0;
@@ -119,6 +124,7 @@ $("#drag").draggable({
     );
     document.getElementById("drag_img").style.display = "block";
   },
+
   stop: function (event) {
     if (!dropped) {
       var target = document.getElementById("drag");
@@ -141,6 +147,7 @@ $("#drag").draggable({
       top: Math.floor(ui.helper.height() / 2),
     };
   },
+
   helper: function (event) {
     return $("#drag").attr("src", "assets/img/Assets/Gloves.svg");
   },
