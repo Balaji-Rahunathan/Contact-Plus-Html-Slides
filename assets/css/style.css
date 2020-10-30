@@ -76,9 +76,9 @@ h6 {
   text-align: center;
 }
 .ban_para {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
-  line-height: 1.8;
+  /* line-height: 1.8; */
   text-align: center;
   padding: 1% 10%;
 
